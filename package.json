@@ -4,12 +4,13 @@
     "namespace": "ui5.redux",
     "resource": "https://openui5.hana.ondemand.com/1.69.1/resources/"
   },
-  "name": "ui5.redux",
-  "version": "1.0.0",
-  "private": true,
+  "name": "@ui5-next/ui5.redux",
+  "version": "1.0.2",
+  "main": "dist/library-preload.js",
   "scripts": {
     "postinstall": "npm run lint:fix",
     "build": "node_modules/.bin/gulp build",
+    "publish:public": "npm publish --access public",
     "lint:fix": "node_modules/.bin/eslint --fix \"src/**/*.js\""
   },
   "dependencies": {
