@@ -5,7 +5,7 @@
 ```js
 // direct include script
 if(sap && sap.ui){
-  sap.ui.loader.config({paths:{"ui5/redux":"https://unpkg.com/@ui5-next/ui5.redux@1.0.3/dist/"}});
+  sap.ui.require("sap/ui/dom/includeScript")("https://unpkg.com/@ui5-next/ui5.redux@1.0.3/dist/library-preload.js")
 } else {
   // ui5 framework not exist
 }
