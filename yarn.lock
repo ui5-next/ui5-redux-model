@@ -2838,6 +2838,13 @@ graceful-fs@4.X, graceful-fs@^4.0.0, graceful-fs@^4.1.11, graceful-fs@^4.1.2, gr
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.2.tgz#6f0952605d0140c1cfdb138ed005775b92d67b02"
   integrity sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q==
 
+graphlib@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/graphlib/-/graphlib-2.1.7.tgz#b6a69f9f44bd9de3963ce6804a2fc9e73d86aecc"
+  integrity sha512-TyI9jIy2J4j0qgPmOOrHTCtpPqJGN/aurBwc6ZT+bRii+di1I+Wv3obRhVrmBEXet+qkMaEX67dXrwsd3QQM6w==
+  dependencies:
+    lodash "^4.17.5"
+
 gulp-babel@^6.1.2:
   version "6.1.3"
   resolved "https://registry.yarnpkg.com/gulp-babel/-/gulp-babel-6.1.3.tgz#5aad8acb0db6b7f2f0be19eeee9528f2064df631"
@@ -2922,15 +2929,16 @@ gulp-sourcemaps@^2.6.0:
     strip-bom-string "1.X"
     through2 "2.X"
 
-gulp-ui5-eager-preload@^1.14.1:
-  version "1.14.1"
-  resolved "https://registry.yarnpkg.com/gulp-ui5-eager-preload/-/gulp-ui5-eager-preload-1.14.1.tgz#57feeda015350eb590f51d4f465f16e41e976fe2"
-  integrity sha512-2PgqjP46o3jZ23yj/KB/b7yK7bnKE+fa5gNLml/WiWPWT9pjmjTxO+xm++mWcGpII+xCL694Sr42G/a8nKJpMQ==
+gulp-ui5-eager-preload@^1.15.1:
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/gulp-ui5-eager-preload/-/gulp-ui5-eager-preload-1.15.1.tgz#ac1387c70e01798580c7b202c48684dabda2415d"
+  integrity sha512-sc/HMbzH1W/O0u31P3sUGxk+dtfkR8tyGV36x6KuB8fRsxhBXmiUTRW5Hnsg4tCBKMI05McKbJ0RuQk9zq8FEw==
   dependencies:
     ansi-colors "^3.2.4"
     deepdash "^1.9.5"
     fancy-log "^1.3.3"
     glob "^7.1.3"
+    graphlib "^2.1.7"
     lodash "^4.17.11"
     node-fetch "^2.3.0"
     plugin-error "^1.0.1"
@@ -3838,7 +3846,7 @@ lodash.uniq@^4.3.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4:
+lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4, lodash@^4.17.5:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==

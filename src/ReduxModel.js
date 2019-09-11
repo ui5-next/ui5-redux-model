@@ -168,18 +168,20 @@ export default class ReduxModel<T> extends ClientModel {
     return this._getObject(sPath, oContext);
   }
 
-  _getObject(sPath, oContext, bWithOriginalStore) {
+  _getObject(sPath, oContext) {
     var oNode = null;
+
     if (oContext instanceof Context) {
       oNode = this._getObject(oContext.getPath());
     } else if (oContext) {
       oNode = oContext;
     }
+
     if (!sPath) {
       return oNode;
     }
 
-    var oState = { ...this._store.getState() }; // clone
+    var oState = cloneDeep(this.getState()); // clone
     var iIndex = 0;
     var aParts = sPath.split("/");
 
