@@ -20,7 +20,7 @@
     "lint:fix": "node_modules/.bin/eslint --fix \"src/**/*.js\""
   },
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "redux": "^4.0.4",
     "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0"
